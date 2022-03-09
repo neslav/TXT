@@ -1,1 +1,1020 @@
+ate/time         : 2021-10-12, 15:03:24, 250ms
+computer name     : MIHAIL
+user name         : Администратор <admin>
+registered owner  : robo / Construction Department #299
+operating system  : Windows 2003 Service Pack 2 build 3790
+system language   : Russian
+system up time    : 1 day 15 hours
+program up time   : 15 minutes 26 seconds
+processor         : Intel(R) Pentium(R) 4 CPU 1.80GHz
+physical memory   : 167/511 MB (free/total)
+free disk space   : (C:) 51,11 GB
+display mode      : 1024x768, 32 bit
+process id        : $1d0
+allocated memory  : 13,12 MB
+executable        : HandyCache.exe
+exec. date/time   : 2009-07-22 11:00
+version           : 1.0.0.193
+compiled with     : Delphi 2007
+madExcept version : 3.0d
+callstack crc     : $9ee1985a, $e4082f5d, $56d37d93
+exception number  : 1
+exception class   : EFCreateError
+exception message : Cannot create file "C:\Documents and Settings\Администратор\Рабочий стол\HandyCacheRC3[1].1.0.0.193\stat.txt". Процесс не может получить доступ к файлу, так как этот файл занят другим процессом.
+
+main thread ($8cc):
+00465d7d +00b9 HandyCache.exe Classes  5480   +5 TFileStream.Create
+00465ca0 +0020 HandyCache.exe Classes  5468   +2 TFileStream.Create
+0061430b +0363 HandyCache.exe Utils    1838  +34 SaveList
+005f5582 +26c6 HandyCache.exe Main    10017 +545 TMainForm.IdleHandler
+004c1d0d +0099 HandyCache.exe Forms    8533   +7 TApplication.Idle
+004c117f +0017 HandyCache.exe Forms    8124   +1 TApplication.HandleMessage
+004c1467 +00b3 HandyCache.exe Forms    8223  +20 TApplication.Run
+
+thread $d50 (TWorkerThread):
+7c9385ec +00 ntdll.dll                             KiFastSystemCallRet
+7c937d09 +0a ntdll.dll                             NtWaitForSingleObject
+7c821d18 +82 kernel32.dll                          WaitForSingleObjectEx
+7c821c88 +0d kernel32.dll                          WaitForSingleObject
+00507dd1 +19 HandyCache.exe VirtualTrees  5203  +3 TWorkerThread.Execute
+0044a1b3 +2b HandyCache.exe madExcept              HookedTThreadExecute
+0046bdb0 +34 HandyCache.exe Classes       9877  +7 ThreadProc
+00405730 +28 HandyCache.exe System       12110 +33 ThreadWrapper
+0044a095 +0d HandyCache.exe madExcept              CallThreadProcSafe
+0044a0ff +37 HandyCache.exe madExcept              ThreadExceptFrame
+>> created by main thread ($8cc) at:
+00507d11 +19 HandyCache.exe VirtualTrees  5166  +1 TWorkerThread.Create
+
+thread $9f8 (TModifyThread):
+7c9385ec +00 ntdll.dll                             KiFastSystemCallRet
+7c936f49 +0a ntdll.dll                             NtDelayExecution
+7c801ecb +47 kernel32.dll                          SleepEx
+7c8024e8 +0a kernel32.dll                          Sleep
+0059e2cb +e7 HandyCache.exe CoolTrayIcon  1716 +23 TModifyThread.Execute
+0044a1b3 +2b HandyCache.exe madExcept              HookedTThreadExecute
+0046bdb0 +34 HandyCache.exe Classes       9877  +7 ThreadProc
+00405730 +28 HandyCache.exe System       12110 +33 ThreadWrapper
+0044a095 +0d HandyCache.exe madExcept              CallThreadProcSafe
+0044a0ff +37 HandyCache.exe madExcept              ThreadExceptFrame
+>> created by main thread ($8cc) at:
+0059e1b5 +19 HandyCache.exe CoolTrayIcon  1687  +1 TModifyThread.Create
+
+thread $8d8 (TIdListenerThread):
+7c9385ec +00 ntdll.dll                                        KiFastSystemCallRet
+7c937d09 +0a ntdll.dll                                        NtWaitForSingleObject
+71a8150e +5e WS2HELP.dll                                      WahReferenceContextByHandle
+71a92839 +9e WS2_32.DLL                                       select
+004e5e5a +de HandyCache.exe IdStackWindows            306 +12 TIdStackWindows.WSSelect
+004e90e8 +44 HandyCache.exe IdSocketHandle            371  +5 TIdSocketHandle.Select
+004f76d1 +39 HandyCache.exe IdServerIOHandlerSocket    50  +6 TIdServerIOHandlerSocket.Accept
+004f963b +5b HandyCache.exe IdTCPServer               778  +6 TIdListenerThread.Run
+0047c0f6 +02 HandyCache.exe SyncObjs                  366  +0 TCriticalSection.Leave
+004e8182 +ae HandyCache.exe IdThread                  230 +25 TIdThread.Execute
+0044a1b3 +2b HandyCache.exe madExcept                         HookedTThreadExecute
+0046bdb0 +34 HandyCache.exe Classes                  9877  +7 ThreadProc
+00405730 +28 HandyCache.exe System                  12110 +33 ThreadWrapper
+0044a095 +0d HandyCache.exe madExcept                         CallThreadProcSafe
+0044a0ff +37 HandyCache.exe madExcept                         ThreadExceptFrame
+>> created by main thread ($8cc) at:
+004e8318 +3c HandyCache.exe IdThread                  282  +5 TIdThread.Create
+
+thread $150 (TFolderWatchThread):
+7c9385ec +00 ntdll.dll                          KiFastSystemCallRet
+7c936f49 +0a ntdll.dll                          NtDelayExecution
+7c801ecb +47 kernel32.dll                       SleepEx
+7c8024e8 +0a kernel32.dll                       Sleep
+0061bb4d +09 HandyCache.exe Utils      3334  +1 MySleep
+005b8e37 +3f HandyCache.exe DNSfrm      667  +5 TFolderWatchThread.Execute
+0044a1b3 +2b HandyCache.exe madExcept           HookedTThreadExecute
+0046bdb0 +34 HandyCache.exe Classes    9877  +7 ThreadProc
+00405730 +28 HandyCache.exe System    12110 +33 ThreadWrapper
+0044a095 +0d HandyCache.exe madExcept           CallThreadProcSafe
+0044a0ff +37 HandyCache.exe madExcept           ThreadExceptFrame
+>> created by main thread ($8cc) at:
+005b88d1 +1d HandyCache.exe DNSfrm      556  +3 TLoadThread.LoadList
+
+thread $d10 (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($8cc) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $b70 (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($8cc) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $8e4 (TIdMyMappedPortThread):
+7c9385ec +00 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +0a ntdll.dll                                  NtWaitForSingleObject
+71a8150e +5e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +9e WS2_32.DLL                                 select
+004e5e5a +de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+004e8e6c +88 HandyCache.exe IdSocketHandle      269  +7 CheckIsReadable
+004e8f30 +64 HandyCache.exe IdSocketHandle      290 +16 TIdSocketHandle.Readable
+004eafc2 +06 HandyCache.exe IdIOHandlerSocket   232  +1 TIdIOHandlerSocket.Readable
+004ebddd +71 HandyCache.exe IdTCPConnection     532 +14 TIdTCPConnection.ReadFromStack
+006201e7 +7f HandyCache.exe IdMyMappedPortTCP   466  +7 TIdMyMappedPortTCP.DoReadFromStack
+00620345 +55 HandyCache.exe IdMyMappedPortTCP   506  +5 TIdMyMappedPortTCP.DoExecute
+004f9984 +4c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0046bdb0 +34 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +28 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +0d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +37 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($8cc) at:
+004e8318 +3c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $410 (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($8cc) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $45c (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($8cc) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $57c (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($8cc) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $e14 (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($8cc) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $9b0 (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $8d8 (TIdListenerThread) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $f94 (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $8d8 (TIdListenerThread) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $918 (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $8d8 (TIdListenerThread) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $bc (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $8d8 (TIdListenerThread) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+disassembling:
+[...]
+00465d34        jge     loc_465de7
+00465d3a 5480   lea     edx, [ebp-$18]
+00465d3d        mov     eax, esi
+00465d3f        call    -$16a00 ($44f344)      ; SysUtils.ExpandFileName
+00465d44        mov     eax, [ebp-$18]
+00465d47        mov     [ebp-$14], eax
+00465d4a        mov     byte ptr [ebp-$10], $b
+00465d4e        call    -$5d683 ($4086d0)      ; Windows.GetLastError
+00465d53        lea     edx, [ebp-$1c]
+00465d56        call    -$1289f ($4534bc)      ; SysUtils.SysErrorMessage
+00465d5b        mov     eax, [ebp-$1c]
+00465d5e        mov     [ebp-$c], eax
+00465d61        mov     byte ptr [ebp-8], $b
+00465d65        lea     eax, [ebp-$14]
+00465d68        push    eax
+00465d69        push    1
+00465d6b        mov     ecx, [$64592c]
+00465d71        mov     dl, 1
+00465d73        mov     eax, [$4600b8]
+00465d78        call    -$11e39 ($453f44)      ; SysUtils.Exception.CreateResFmt
+00465d7d      > call    -$60c6e ($405114)      ; System.@RaiseExcept
+00465d82        jmp     loc_465de7
+00465d84 5484   movzx   edx, di
+00465d87        mov     eax, esi
+00465d89        call    -$16f56 ($44ee38)      ; SysUtils.FileOpen
+00465d8e        mov     ecx, eax
+00465d90        xor     edx, edx
+00465d92        mov     eax, ebx
+00465d94        call    -$1dd ($465bbc)        ; Classes.THandleStream.Create
+00465d99 5485   cmp     dword ptr [ebx+4], 0
+00465d9d        jge     loc_465de7
+00465d9f 5486   lea     edx, [ebp-$20]
+00465da2        mov     eax, esi
+00465da4        call    -$16a65 ($44f344)      ; SysUtils.ExpandFileName
+00465da9        mov     eax, [ebp-$20]
+00465dac        mov     [ebp-$14], eax
+00465daf        mov     byte ptr [ebp-$10], $b
+00465db3        call    -$5d6e8 ($4086d0)      ; Windows.GetLastError
+00465db8        lea     edx, [ebp-$24]
+00465dbb        call    -$12904 ($4534bc)      ; SysUtils.SysErrorMessage
+00465dc0        mov     eax, [ebp-$24]
+[...]
+
+date/time         : 2009-11-05, 16:07:56, 203ms
+computer name     : MIHAIL
+user name         : Администратор <admin>
+registered owner  : robo / Construction Department #299
+operating system  : Windows 2003 Service Pack 2 build 3790
+system language   : Russian
+system up time    : 7 days 2 hours
+program up time   : 1 hour 1 minute
+processor         : Intel(R) Pentium(R) 4 CPU 1.80GHz
+physical memory   : 256/511 MB (free/total)
+free disk space   : (C:) 47,14 GB
+display mode      : 1024x768, 32 bit
+process id        : $da8
+allocated memory  : 28,32 MB
+executable        : HandyCache.exe
+exec. date/time   : 2009-07-22 10:00
+version           : 1.0.0.193
+compiled with     : Delphi 2007
+madExcept version : 3.0d
+callstack crc     : $a80d3f21, $e09a4dcf, $2c3ee107
+count             : 78
+exception number  : 12
+exception class   : EAccessViolation
+exception message : Access violation at address 00462F6E in module 'HandyCache.exe'. Read of address 00000008.
+
+main thread ($430):
+00462f6e +000a HandyCache.exe Classes  2991   +1 TList.Get
+00588638 +0018 HandyCache.exe NxCells   300   +3 TCells.GetCell
+00579ca9 +0009 HandyCache.exe NxGrid    358   +1 TNextGrid.GetCell
+005f5722 +2866 HandyCache.exe Main    10033 +561 TMainForm.IdleHandler
+004c1d0d +0099 HandyCache.exe Forms    8533   +7 TApplication.Idle
+004c117f +0017 HandyCache.exe Forms    8124   +1 TApplication.HandleMessage
+004c1467 +00b3 HandyCache.exe Forms    8223  +20 TApplication.Run
+
+thread $578 (TWorkerThread):
+7c9385ec +00 ntdll.dll                             KiFastSystemCallRet
+7c937d09 +0a ntdll.dll                             NtWaitForSingleObject
+7c821d18 +82 kernel32.dll                          WaitForSingleObjectEx
+7c821c88 +0d kernel32.dll                          WaitForSingleObject
+00507dd1 +19 HandyCache.exe VirtualTrees  5203  +3 TWorkerThread.Execute
+0044a1b3 +2b HandyCache.exe madExcept              HookedTThreadExecute
+0046bdb0 +34 HandyCache.exe Classes       9877  +7 ThreadProc
+00405730 +28 HandyCache.exe System       12110 +33 ThreadWrapper
+0044a095 +0d HandyCache.exe madExcept              CallThreadProcSafe
+0044a0ff +37 HandyCache.exe madExcept              ThreadExceptFrame
+>> created by main thread ($430) at:
+00507d11 +19 HandyCache.exe VirtualTrees  5166  +1 TWorkerThread.Create
+
+thread $aec (TModifyThread):
+7c9385ec +00 ntdll.dll                             KiFastSystemCallRet
+7c936f49 +0a ntdll.dll                             NtDelayExecution
+7c801ecb +47 kernel32.dll                          SleepEx
+7c8024e8 +0a kernel32.dll                          Sleep
+0059e2cb +e7 HandyCache.exe CoolTrayIcon  1716 +23 TModifyThread.Execute
+0044a1b3 +2b HandyCache.exe madExcept              HookedTThreadExecute
+0046bdb0 +34 HandyCache.exe Classes       9877  +7 ThreadProc
+00405730 +28 HandyCache.exe System       12110 +33 ThreadWrapper
+0044a095 +0d HandyCache.exe madExcept              CallThreadProcSafe
+0044a0ff +37 HandyCache.exe madExcept              ThreadExceptFrame
+>> created by main thread ($430) at:
+0059e1b5 +19 HandyCache.exe CoolTrayIcon  1687  +1 TModifyThread.Create
+
+thread $a38 (TIdListenerThread):
+7c9385ec +00 ntdll.dll                                        KiFastSystemCallRet
+7c937d09 +0a ntdll.dll                                        NtWaitForSingleObject
+71a8150e +5e WS2HELP.dll                                      WahReferenceContextByHandle
+71a92839 +9e WS2_32.DLL                                       select
+004e5e5a +de HandyCache.exe IdStackWindows            306 +12 TIdStackWindows.WSSelect
+004e90e8 +44 HandyCache.exe IdSocketHandle            371  +5 TIdSocketHandle.Select
+004f76d1 +39 HandyCache.exe IdServerIOHandlerSocket    50  +6 TIdServerIOHandlerSocket.Accept
+004f963b +5b HandyCache.exe IdTCPServer               778  +6 TIdListenerThread.Run
+0047c0f6 +02 HandyCache.exe SyncObjs                  366  +0 TCriticalSection.Leave
+004e8182 +ae HandyCache.exe IdThread                  230 +25 TIdThread.Execute
+0044a1b3 +2b HandyCache.exe madExcept                         HookedTThreadExecute
+0046bdb0 +34 HandyCache.exe Classes                  9877  +7 ThreadProc
+00405730 +28 HandyCache.exe System                  12110 +33 ThreadWrapper
+0044a095 +0d HandyCache.exe madExcept                         CallThreadProcSafe
+0044a0ff +37 HandyCache.exe madExcept                         ThreadExceptFrame
+>> created by main thread ($430) at:
+004e8318 +3c HandyCache.exe IdThread                  282  +5 TIdThread.Create
+
+thread $bf4 (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $a38 (TIdListenerThread) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $6a4 (TFolderWatchThread):
+7c9385ec +00 ntdll.dll                          KiFastSystemCallRet
+7c936f49 +0a ntdll.dll                          NtDelayExecution
+7c801ecb +47 kernel32.dll                       SleepEx
+7c8024e8 +0a kernel32.dll                       Sleep
+0061bb4d +09 HandyCache.exe Utils      3334  +1 MySleep
+005b8e37 +3f HandyCache.exe DNSfrm      667  +5 TFolderWatchThread.Execute
+0044a1b3 +2b HandyCache.exe madExcept           HookedTThreadExecute
+0046bdb0 +34 HandyCache.exe Classes    9877  +7 ThreadProc
+00405730 +28 HandyCache.exe System    12110 +33 ThreadWrapper
+0044a095 +0d HandyCache.exe madExcept           CallThreadProcSafe
+0044a0ff +37 HandyCache.exe madExcept           ThreadExceptFrame
+>> created by main thread ($430) at:
+005b88d1 +1d HandyCache.exe DNSfrm      556  +3 TLoadThread.LoadList
+
+thread $da4 (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($430) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $d50 (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($430) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $d28 (TIdMyMappedPortThread):
+7c9385ec +000 ntdll.dll                                  KiFastSystemCallRet
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00462e5d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004e5e5a +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006204fe +20e HandyCache.exe IdMyMappedPortTCP   544 +43 TIdMyMappedPortTCP.DoExecute
+004f9984 +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004e8182 +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+0044a1b3 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+0046bdb0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405730 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+0044a095 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+0044a0ff +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($430) at:
+004e8318 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $804 (TIdMyMappedPortThread): <suspended>
+7c8217ec +00 kernel32.dll
+>> created by main thread ($430) at:
+004e8318 +3c HandyCache.exe IdThread 282 +5 TIdThread.Create
+
+thread $4fc (TIdMyMappedPortThread): <suspended>
+7c8217ec +00 kernel32.dll
+>> created by main thread ($430) at:
+004e8318 +3c HandyCache.exe IdThread 282 +5 TIdThread.Create
+
+thread $e98 (TIdMyMappedPortThread): <suspended>
+7c8217ec +00 kernel32.dll
+>> created by main thread ($430) at:
+004e8318 +3c HandyCache.exe IdThread 282 +5 TIdThread.Create
+
+thread $efc (TIdMyMappedPortThread): <suspended>
+7c8217ec +00 kernel32.dll
+>> created by main thread ($430) at:
+004e8318 +3c HandyCache.exe IdThread 282 +5 TIdThread.Create
+
+disassembling:
+00462f64      public Classes.TList.Get:        ; function entry point
+00462f64 2990   push    ebx
+00462f65        push    esi
+00462f66        mov     esi, edx
+00462f68        mov     ebx, eax
+00462f6a 2991   test    esi, esi
+00462f6c        jl      loc_462f73
+00462f6e      > cmp     esi, [ebx+8]
+00462f71        jl      loc_462f82
+00462f73 2992   mov     edx, [$64571c]
+00462f79        mov     ecx, esi
+00462f7b        mov     eax, [ebx]
+00462f7d        call    -$e2 ($462ea0)         ; Classes.TList.Error
+00462f82 2993   mov     eax, [ebx+4]
+00462f85        mov     eax, [eax+esi*4]
+00462f88 2994   pop     esi
+00462f89        pop     ebx
+00462f8a        ret
+
+date/time         : 2009-11-09, 14:24:12, 421ms
+computer name     : MIHAIL
+wts client name   : SYSADMIN
+user name         : Администратор <admin>
+registered owner  : robo / Construction Department #299
+operating system  : Windows 2003 Service Pack 2 build 3790
+system language   : Russian
+system up time    : 3 days 21 hours
+program up time   : 2 days 23 hours
+processor         : Intel(R) Pentium(R) 4 CPU 1.80GHz
+physical memory   : 236/511 MB (free/total)
+free disk space   : (C:) 43,08 GB
+display mode      : 1024x768, 8 bit
+process id        : $8b0
+allocated memory  : 65,39 MB
+executable        : HandyCache.exe
+exec. date/time   : 2009-10-16 23:49
+version           : 1.0.0.232
+compiled with     : Delphi 2007
+madExcept version : 3.0k
+callstack crc     : $a80d3f21, $ecff7682, $23c0fb47
+count             : 577
+exception number  : 427
+exception class   : EAccessViolation
+exception message : Access violation at address 0046A0AE in module 'HandyCache.exe'. Read of address 00000008.
+
+main thread ($e24):
+0046a0ae +000a HandyCache.exe Classes  2991   +1 TList.Get
+0058dd77 +001b HandyCache.exe NxCells   300   +3 TCells.GetCell
+0057f695 +0009 HandyCache.exe NxGrid    358   +1 TNextGrid.GetCell
+005ef095 +27c9 HandyCache.exe Main    10344 +546 TMainForm.IdleHandler
+004c8e4d +0099 HandyCache.exe Forms    8533   +7 TApplication.Idle
+004c82bf +0017 HandyCache.exe Forms    8124   +1 TApplication.HandleMessage
+004c85a7 +00b3 HandyCache.exe Forms    8223  +20 TApplication.Run
+
+thread $e4c (TWorkerThread):
+7c937d09 +0a ntdll.dll                             NtWaitForSingleObject
+7c821d18 +82 kernel32.dll                          WaitForSingleObjectEx
+7c821c88 +0d kernel32.dll                          WaitForSingleObject
+0050d501 +19 HandyCache.exe VirtualTrees  5203  +3 TWorkerThread.Execute
+00450d47 +2b HandyCache.exe madExcept              HookedTThreadExecute
+00472ef0 +34 HandyCache.exe Classes       9877  +7 ThreadProc
+00405638 +28 HandyCache.exe System       12110 +33 ThreadWrapper
+00450c29 +0d HandyCache.exe madExcept              CallThreadProcSafe
+00450c93 +37 HandyCache.exe madExcept              ThreadExceptFrame
+>> created by main thread ($e24) at:
+0050d441 +19 HandyCache.exe VirtualTrees  5166  +1 TWorkerThread.Create
+
+thread $da8 (TModifyThread):
+7c936f49 +0a ntdll.dll                             NtDelayExecution
+7c801ecb +47 kernel32.dll                          SleepEx
+7c8024e8 +0a kernel32.dll                          Sleep
+005a626f +e7 HandyCache.exe CoolTrayIcon  1722 +23 TModifyThread.Execute
+00450d47 +2b HandyCache.exe madExcept              HookedTThreadExecute
+00472ef0 +34 HandyCache.exe Classes       9877  +7 ThreadProc
+00405638 +28 HandyCache.exe System       12110 +33 ThreadWrapper
+00450c29 +0d HandyCache.exe madExcept              CallThreadProcSafe
+00450c93 +37 HandyCache.exe madExcept              ThreadExceptFrame
+>> created by main thread ($e24) at:
+005a6159 +19 HandyCache.exe CoolTrayIcon  1693  +1 TModifyThread.Create
+
+thread $5c0 (TIdListenerThread):
+7c937d09 +0a ntdll.dll                                        NtWaitForSingleObject
+71a8150e +5e WS2HELP.dll                                      WahReferenceContextByHandle
+71a92839 +9e WS2_32.DLL                                       select
+004eabc6 +de HandyCache.exe IdStackWindows            306 +12 TIdStackWindows.WSSelect
+004ee000 +44 HandyCache.exe IdSocketHandle            371  +5 TIdSocketHandle.Select
+004fc829 +39 HandyCache.exe IdServerIOHandlerSocket    50  +6 TIdServerIOHandlerSocket.Accept
+004fe793 +5b HandyCache.exe IdTCPServer               778  +6 TIdListenerThread.Run
+00483236 +02 HandyCache.exe SyncObjs                  366  +0 TCriticalSection.Leave
+004eceee +ae HandyCache.exe IdThread                  230 +25 TIdThread.Execute
+00450d47 +2b HandyCache.exe madExcept                         HookedTThreadExecute
+00472ef0 +34 HandyCache.exe Classes                  9877  +7 ThreadProc
+00405638 +28 HandyCache.exe System                  12110 +33 ThreadWrapper
+00450c29 +0d HandyCache.exe madExcept                         CallThreadProcSafe
+00450c93 +37 HandyCache.exe madExcept                         ThreadExceptFrame
+>> created by main thread ($e24) at:
+004ed084 +3c HandyCache.exe IdThread                  282  +5 TIdThread.Create
+
+thread $830 (TFolderWatchThread):
+7c936f49 +0a ntdll.dll                          NtDelayExecution
+7c801ecb +47 kernel32.dll                       SleepEx
+7c8024e8 +0a kernel32.dll                       Sleep
+0062d6c9 +09 HandyCache.exe Utils      3365  +1 MySleep
+006134fb +3f HandyCache.exe DNSfrm      667  +5 TFolderWatchThread.Execute
+00450d47 +2b HandyCache.exe madExcept           HookedTThreadExecute
+00472ef0 +34 HandyCache.exe Classes    9877  +7 ThreadProc
+00405638 +28 HandyCache.exe System    12110 +33 ThreadWrapper
+00450c29 +0d HandyCache.exe madExcept           CallThreadProcSafe
+00450c93 +37 HandyCache.exe madExcept           ThreadExceptFrame
+>> created by main thread ($e24) at:
+00612f95 +1d HandyCache.exe DNSfrm      556  +3 TLoadThread.LoadList
+
+thread $d74 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($e24) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $f24 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($e24) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $ba0 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by main thread ($e24) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $f38 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $b90 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $b34 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $f14 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $57c (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $994 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $b68 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $f54 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $fc4 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $d64 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $ba8 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $968 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $b80 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $f64 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $890 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $474 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $a54 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+thread $428 (TIdMyMappedPortThread):
+7c937d09 +00a ntdll.dll                                  NtWaitForSingleObject
+00469f9d +055 HandyCache.exe Classes            2945  +9 TList.Delete
+71a8150e +05e WS2HELP.dll                                WahReferenceContextByHandle
+71a92839 +09e WS2_32.DLL                                 select
+004eabc6 +0de HandyCache.exe IdStackWindows      306 +12 TIdStackWindows.WSSelect
+006326af +20f HandyCache.exe IdMyMappedPortTCP   588 +43 TIdMyMappedPortTCP.DoExecute
+004feadc +04c HandyCache.exe IdTCPServer         899  +3 TIdPeerThread.Run
+004eceee +0ae HandyCache.exe IdThread            230 +25 TIdThread.Execute
+00450d47 +02b HandyCache.exe madExcept                   HookedTThreadExecute
+00472ef0 +034 HandyCache.exe Classes            9877  +7 ThreadProc
+00405638 +028 HandyCache.exe System            12110 +33 ThreadWrapper
+00450c29 +00d HandyCache.exe madExcept                   CallThreadProcSafe
+00450c93 +037 HandyCache.exe madExcept                   ThreadExceptFrame
+>> created by thread $5c0 (TIdListenerThread) at:
+004ed084 +03c HandyCache.exe IdThread            282  +5 TIdThread.Create
+
+disassembling:
+0046a0a4      public Classes.TList.Get:        ; function entry point
+0046a0a4 2990   push    ebx
+0046a0a5        push    esi
+0046a0a6        mov     esi, edx
+0046a0a8        mov     ebx, eax
+0046a0aa 2991   test    esi, esi
+0046a0ac        jl      loc_46a0b3
+0046a0ae      > cmp     esi, [ebx+8]
+0046a0b1        jl      loc_46a0c2
+0046a0b3 2992   mov     edx, [$657858]
+0046a0b9        mov     ecx, esi
+0046a0bb        mov     eax, [ebx]
+0046a0bd        call    -$e2 ($469fe0)         ; Classes.TList.Error
+0046a0c2 2993   mov     eax, [ebx+4]
+0046a0c5        mov     eax, [eax+esi*4]
+0046a0c8 2994   pop     esi
+0046a0c9        pop     ebx
+0046a0ca        ret
+
 
