@@ -1,0 +1,4 @@
+Yurchenko Viacheslav Ruslanovich
+age: 21
+have 2 cats 
+salary 1000$
