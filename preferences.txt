@@ -1,0 +1,4 @@
+favorite movie: back to the future
+favorite TV series: mandalorian
+favorite food: pizza
+favorite county: USA
